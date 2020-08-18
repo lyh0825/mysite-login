@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+</head>
+<body>
+<h1>{{ request.session.user_name }}!  欢迎回来.</h1>
+<p>
+    <a href="/logout/">登出</a>
+</p>
+</body>
+</html>
+
+{% comment %}
+01
+注意其中的模板语言，{{ request }}这个变量会被默认传入模板中，
+可以通过圆点的调用方式，获取它内部的{{ request.session }}，
+再进一步的获取session中的内容。其实{{ request }}中的数据远不止此，
+例如{{ request.path }}就可以获取先前的url地址。
+{% endcomment %}

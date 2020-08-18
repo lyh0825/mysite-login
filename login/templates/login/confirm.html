@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>确认注册</title>
+</head>
+<body>
+
+
+        <h1 style="margin-left: 100px; color:white;" >{{ message }}</h1>
+
+        <script>
+            window.setTimeout("window.location='/login/'",2000);
+        </script>
+</body>
+</html>
+
+{% comment %}
+
+页面中通过JS代码，设置2秒后自动跳转到登录页面。
+confirm.html页面仅仅是个示意的提示页面，你可以根据自己的需要去除或者美化。
+
+{% endcomment %}
